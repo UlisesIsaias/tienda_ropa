@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Color de fondo */
+}
+
+header {
+    background-color: #000000; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header img {
+    height: 50px; /* Tamaño del logo */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura del carousel */
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-height: 200px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.product h4 {
+    margin: 10px 0;
+}
+
+.product form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product form label,
+.product form select,
+.product form input,
+.product form button {
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgray;
+}

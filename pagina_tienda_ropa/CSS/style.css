@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cnt-grid{
+    display: grid;
+    grid-template-areas: 
+    'area11 area11 areai areai area1 area1'
+    'aream  aream  areah areah areak areak'
+    'aream  aream  areah areah areak areak'
+    ;
+}   
+
+
+.contenido:nth-child(1){
+    background-color: rgb(0, 0, 0);
+
+    grid-area: area1;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    
+}
+.contenido:nth-child(1) h3 {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  background-color: black;
+  margin-right: 40px;
+}
+
+.contenido:nth-child(2){
+    background-color: rgb(0, 0, 0);
+    grid-area: area11;
+    display: flex;
+    align-items: center;
+}
+.contenido:nth-child(2) h3 {
+    
+    background-color: black;
+    vertical-align: middle ;
+    margin: 0;
+    margin-left: 20px;
+    color: white ;
+}
+
+.contenido:nth-child(3){
+    background-color:  rgb(0, 0, 0)  ;
+    grid-area: areai;
+    display: flex;
+    align-items: center;
+}
+
+.contenido:nth-child(3) h3{
+    background-color: black;
+    vertical-align: middle;
+    margin-left: 130px;
+}
+
+.contenido:nth-child(3) img {
+    height: 100px;
+    margin-left: 110px; 
+}
+.contenido:nth-child(4){
+background-color: rgb(139, 17, 17);
+grid-area: aream;
+height: 520px;
+width: 400px;
+margin-left: 40px;
+margin-top: 10px;
+overflow: hidden;
+}
+.contenido:nth-child(4) img {
+    height: 533px;
+    width: 400px;
+    transition: transform 1s ease;
+}
+.contenido:nth-child(4):hover img {
+    transform: scale(1.3); 
+}
+
+.contenido:nth-child(5){
+background-color: rgb(18, 218, 191);
+grid-area: areah;
+height: 520px;
+width: 400px;
+margin-left: 10px;
+margin-top: 10px;
+overflow: hidden;
+}
+.contenido:nth-child(5) img {
+    height: 533px;
+    width: 400px;
+    transition: transform 1s ease;
+}
+.contenido:nth-child(5 ):hover img {
+    transform: scale(1.2);
+}
+.contenido:nth-child(6  ){
+background-color: rgb(83, 216, 43);
+grid-area: areak;
+height: 520px;
+width: 400px;
+margin-left: 10px   ;
+margin-top: 10px;
+overflow: hidden;
+}
+.contenido:nth-child(6) img {
+    height: 533px;
+    width: 400px;
+    transition: transform 1s ease;
+}
+.contenido:nth-child(6):hover img {
+    transform: scale(1.3); 
+}
