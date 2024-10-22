@@ -1,0 +1,15 @@
+{
+    "name": "freddy/pagina",
+    "description": "inicio de sesion",
+    "type": "project",
+    "require": {
+        "kreait/firebase-php": "^7.12"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freddy"
+        }
+    ],
+    "minimum-stability": "stable"
+}
